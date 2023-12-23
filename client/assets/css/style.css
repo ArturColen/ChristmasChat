@@ -320,3 +320,54 @@ body.dark-theme{
     width: 450px;
     justify-self: center;
 }
+
+/* === Actions Section === */
+.action-card{
+    width: 230px;
+    position: relative;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+    padding: 1rem 1rem 1.5rem;
+    border-radius: .75rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.action-overlay{
+    width: 250px;
+    height: 250px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -5rem;
+    left: -.65rem;
+    z-index: 0;
+}
+
+.action-image{
+    width: 150px;
+    margin-bottom: var(--mb-2);
+    position: relative;
+    transition: .3s;
+}
+
+.action-title{
+    font-size: var(--h2-font-size);
+}
+
+.action-description{
+    font-weight: var(--font-medium);
+}
+
+.action-card:hover .action-image{
+    transform: translateY(-.5rem);
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--text-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
