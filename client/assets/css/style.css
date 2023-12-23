@@ -335,6 +335,7 @@ body.dark-theme{
 /* === Actions Section === */
 .action-card{
     width: 230px;
+    height: 350px;
     position: relative;
     background-color: var(--container-color);
     box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
