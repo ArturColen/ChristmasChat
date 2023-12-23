@@ -242,3 +242,30 @@ body.dark-theme{
 .active-link{
     color: var(--first-color);
 }
+
+/* === Home === */
+.home-container{
+    padding: 1.5rem 0 2rem 0;
+    row-gap: 1.5rem;
+}
+
+.home-image{
+    width: 320px;
+    justify-self: center;
+}
+
+.home-data{
+    text-align: center;
+}
+
+.home-title{
+    font-size: var(--biggest-font-size);
+    margin-bottom: var(--mb-0-5);
+    line-height: 140%;
+}
+
+.home-description{
+    font-size: var(--small-font-size);
+    padding: 0 2rem;
+    margin-bottom: var(--mb-2-5);
+}
