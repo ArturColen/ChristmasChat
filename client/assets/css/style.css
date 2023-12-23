@@ -243,7 +243,7 @@ body.dark-theme{
     color: var(--first-color);
 }
 
-/* === Home === */
+/* === Home Section === */
 .home-container{
     padding: 1.5rem 0 2rem 0;
     row-gap: 1.5rem;
@@ -268,4 +268,55 @@ body.dark-theme{
     font-size: var(--small-font-size);
     padding: 0 2rem;
     margin-bottom: var(--mb-2-5);
+}
+
+/* === Wishes Section === */
+.wishes-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1.5rem;
+}
+
+.wishes-content{
+    text-align: center;
+}
+
+.wishes-image{
+    width: 100px;
+    transition: .3s;
+}
+
+.wishes-image:hover{
+    transform: translateY(-.25rem);
+}
+
+.wishes-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.wishes-description{
+    font-size: var(--small-font-size);
+}
+
+/* === Message Section === */
+.message-container{
+    padding-top: -2rem;
+    row-gap: 1rem;
+}
+
+.message-data{
+    text-align: center;
+}
+
+.message-title{
+    margin-bottom: var(--mb-1-5);
+}
+
+.message-description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.message-image{
+    width: 450px;
+    justify-self: center;
 }
