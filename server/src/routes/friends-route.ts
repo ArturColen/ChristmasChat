@@ -1,16 +1,17 @@
 import express from 'express';
 import { findAllFriendsController, findFriendByCodeController, createFriendController, updateFriendController, deleteFriendController } from '../controllers/friend-controller.js';
+import { verifyTokenInBack } from '../middlewares/token-moddleware.js';
 
 const friendRouter = express.Router();
 
-friendRouter.get('/', findAllFriendsController);
+friendRouter.get('/', verifyTokenInBack, findAllFriendsController);
 
-friendRouter.get('/search', findFriendByCodeController);
+friendRouter.get('/search', verifyTokenInBack, findFriendByCodeController);
 
-friendRouter.post('/', createFriendController);
+friendRouter.post('/', verifyTokenInBack, createFriendController);
 
-friendRouter.put('/:id', updateFriendController);
+friendRouter.put('/:id', verifyTokenInBack, updateFriendController);
 
-friendRouter.delete('/:id', deleteFriendController);
+friendRouter.delete('/:id', verifyTokenInBack, deleteFriendController);
 
 export default friendRouter;
