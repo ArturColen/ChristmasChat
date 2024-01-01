@@ -18,4 +18,5 @@ The program was developed to share a website featuring Christmas messages. To ac
 
 ## 📁 Project access
 You can access the chatbot by clicking [here](https://artur-bomtempo-colen-4htrp.chat.blip.ai/?appKey=bmF0YWxpbmE6NzJiZGE3MDYtMmY3ZS00Y2NmLWFlMzItNzQ2NTBlMDZlOGNh).
+
 **Observation:** to test the integration with the API and receive a link to the site with Christmas messages, enter the following code: `TESTE_CHRISTMAS_CHAT`.
