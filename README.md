@@ -1,6 +1,8 @@
 # Christmas chat 🤖🎄
 Project created to share Christmas and New Year's messages with friends interactively through a chatbot and a website.
 
+<img width="1440" alt="Chatbot demo image" src="https://github.com/ArturColen/ChristmasChat/assets/96635074/080a1c76-0275-4834-a3ad-afa1c220f698">
+
 ## 🔨 Project functionality
 The program was developed to share a website featuring Christmas messages. To achieve this, users accessing the chatbot need to input a code, which retrieves their specific data from the API and displays it. Furthermore, the conversational bot offers various options to spread the Christmas spirit in an enjoyable manner, including a quiz, a playlist, an option to send messages, among others.
 
