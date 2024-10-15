@@ -7,22 +7,22 @@ export const findAllFriendsService = async () => {
         const friends = await friendRepository.findAllFriendsRepository();
 
         return friends;
-    }
-    catch (error) {
+    } catch (error) {
         throw new Error((error as Error).message);
     }
-}
+};
 
-export const findFriendByCodeService = async (codeFriend: string): Promise<FriendInterface | null> => {
+export const findFriendByCodeService = async (
+    codeFriend: string
+): Promise<FriendInterface | null> => {
     try {
         const foundFriend = await friendRepository.findFriendByCodeRepository(codeFriend);
 
         return foundFriend;
-    } 
-    catch (error) {
+    } catch (error) {
         throw new Error((error as Error).message);
     }
-}
+};
 
 export const createFriendService = async (friendData: FriendInterface) => {
     try {
@@ -31,11 +31,10 @@ export const createFriendService = async (friendData: FriendInterface) => {
         const createdFriend = await friendRepository.createFriendRepository(friendData);
 
         return createdFriend;
-    }
-    catch (error) {
+    } catch (error) {
         throw new Error((error as Error).message);
     }
-}
+};
 
 export const updateFriendService = async (id: string, friendData: FriendInterface) => {
     try {
@@ -54,11 +53,10 @@ export const updateFriendService = async (id: string, friendData: FriendInterfac
         }
 
         return updatedFriendDocument;
-    }
-    catch (error) {
+    } catch (error) {
         throw new Error((error as Error).message);
     }
-}
+};
 
 export const deleteFriendService = async (id: string) => {
     try {
@@ -69,8 +67,7 @@ export const deleteFriendService = async (id: string) => {
         }
 
         return deletedFriend;
-    }
-    catch (error) {
+    } catch (error) {
         throw new Error((error as Error).message);
     }
-}
+};

@@ -1,166 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Artur Bomtempo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boas festas!</title>
-    <!-- === Favicon === -->
-    <link rel="shortcut icon" href="./assets/images/logo/logo.png" type="image/x-icon">
-    <!-- === Boxicons === -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- === Swiper CSS === -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <!-- === CSS File === -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <!-- === Header === -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav-logo">
-                <img src="./assets/images/logo/logo.png" alt="Logo" class="nav-logo-image"> Natal 2023
-            </a>
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#wishes" class="nav-link">Desejos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#message" class="nav-link">Mensagem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#actions" class="nav-link">Ações</a>
-                    </li>
-                </ul>
-                <div class="nav-close" id="nav-close">
-                    <i class="bx bx-x"></i>
-                </div>
-                <img src="./assets/images/navbar/nav-light.png" alt="Luzes natalinas" class="nav-image">
-            </div>
-            <div class="nav-btns">
-                <i class="bx bx-moon change-theme" id="theme-button"></i>
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="bx bx-grid-alt"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <!-- === Home Section === -->
-        <section class="home" id="home">
-            <div class="home-container container grid">
-                <img src="./assets/images/home/home.png" alt="Árvore de natal" class="home-image">
-                <div class="home-data">
-                    <h1 class="home-title">Feliz Natal e um<br> próspero Ano Novo!</h1>
-                    <p class="home-description">
-                        Que este Natal transborde amor e união, trazendo sorrisos e momentos 
-                        inesquecíveis. Que o Ano Novo chegue carregado de esperança, novas 
-                        conquistas e alegrias sem fim. Feliz Natal e um maravilhoso Ano Novo 
-                        para você e sua família!
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- === Wishes Section === -->
-        <section class="wishes section container" id="wishes">
-            <h2 class="section-title">Desejo que neste natal você...</h2>
-            <div class="wishes-container grid">
-                <div class="wishes-content">
-                    <img src="./assets/images/wishes/wish-01.png" alt="Presente" class="wishes-image">
-                    <h3 class="wishes-title">Esteja presente</h3>
-                    <p class="wishes-description">Na vida das pessoas que você ama</p>
-                </div>
-                <div class="wishes-content">
-                    <img src="./assets/images/wishes/wish-02.png" alt="Presente" class="wishes-image">
-                    <h3 class="wishes-title">Toque a alegria</h3>
-                    <p class="wishes-description">Espalhando felicidade por onde passa</p>
-                </div>
-                <div class="wishes-content">
-                    <img src="./assets/images/wishes/wish-03.png" alt="Presente" class="wishes-image">
-                    <h3 class="wishes-title">Compartilhe carinho</h3>
-                    <p class="wishes-description">Como quem preenche cada instante com afeto</p>
-                </div>
-            </div>
-        </section>
-        <!-- === Message Section === -->
-        <section class="message section container" id="message">
-            <div class="message-container grid">
-                <div class="message-data">
-                    <h2 class="section-title message-title">O verdadeiro significado <br>do Natal</h2>
-                    <p class="message-description">
-                        O Natal vai além dos presentes e decorações; é a 
-                        época em que a compaixão e a generosidade ganham 
-                        destaque. É sobre estar junto, compartilhar amor 
-                        e lembrar que a luz dentro de nós pode iluminar 
-                        o mundo ao redor. É um lembrete de como pequenos 
-                        gestos podem fazer uma grande diferença na vida 
-                        das pessoas.
-                    </p>
-                </div>
-                <img src="./assets/images/message/fireplace.png" alt="Lareira" class="message-image">
-            </div>
-        </section>
-        <!-- === Actions Section === -->
-        <section class="actions section container" id="actions">
-            <h2 class="section-title">Aproveite o Natal para...</h2>
-            <div class="actions-container">
-                <div class="swiper actions-swiper">
-                    <div class="swiper-wrapper">
-                        <article class="action-card swiper-slide">
-                            <div class="action-overlay"></div>
-                            <img src="./assets/images/decorations/decoration-01.png" alt="Biscoito natalino" class="action-image">
-                            <h3 class="action-title">Criar</h3>
-                            <span class="action-description">Momentos doces em família</span>
-                        </article>
-                        <article class="action-card swiper-slide">
-                            <div class="action-overlay"></div>
-                            <img src="./assets/images/decorations/decoration-02.png" alt="Árvore de Natal" class="action-image">
-                            <h3 class="action-title">Reunir a família</h3>
-                            <span class="action-description">Para decorar a casa</span>
-                        </article>
-                        <article class="action-card swiper-slide">
-                            <div class="action-overlay"></div>
-                            <img src="./assets/images/decorations/decoration-03.png" alt="Rena natalina" class="action-image">
-                            <h3 class="action-title">Espalhar alegria</h3>
-                            <span class="action-description">Ao presentear os entes queridos</span>
-                        </article>
-                        <article class="action-card swiper-slide">
-                            <div class="action-overlay"></div>
-                            <img src="./assets/images/decorations/decoration-04.png" alt="Boneco de neve" class="action-image">
-                            <h3 class="action-title">Construir</h3>
-                            <span class="action-description">Momentos memoráveis em família</span>
-                        </article>
-                        <article class="action-card swiper-slide">
-                            <div class="action-overlay"></div>
-                            <img src="./assets/images/decorations/decoration-05.png" alt="Guirlanda natalina" class="action-image">
-                            <h3 class="action-title">Compartilhar</h3>
-                            <span class="action-description">O espírito natalino com gestos de afeto</span>
-                        </article>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Artur Bomtempo" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Boas festas!</title>
+        <!-- === Favicon === -->
+        <link rel="shortcut icon" href="./assets/images/logo/logo.png" type="image/x-icon" />
+        <!-- === Boxicons === -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+        <!-- === Swiper CSS === -->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <!-- === CSS File === -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <!-- === Header === -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav-logo">
+                    <img src="./assets/images/logo/logo.png" alt="Logo" class="nav-logo-image" />
+                    Natal 2023
+                </a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#wishes" class="nav-link">Desejos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#message" class="nav-link">Mensagem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#actions" class="nav-link">Ações</a>
+                        </li>
+                    </ul>
+                    <div class="nav-close" id="nav-close">
+                        <i class="bx bx-x"></i>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <img
+                        src="./assets/images/navbar/nav-light.png"
+                        alt="Luzes natalinas"
+                        class="nav-image"
+                    />
                 </div>
-            </div>
-        </section>
-    </main>
-    <!-- === Footer === -->
-    <footer class="footer">
-        <span class="footer-copy">Desenvolvido por Artur Bomtempo</span>
-    </footer>
+                <div class="nav-btns">
+                    <i class="bx bx-moon change-theme" id="theme-button"></i>
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="bx bx-grid-alt"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <!-- === Home Section === -->
+            <section class="home" id="home">
+                <div class="home-container container grid">
+                    <img
+                        src="./assets/images/home/home.png"
+                        alt="Árvore de natal"
+                        class="home-image"
+                    />
+                    <div class="home-data">
+                        <h1 class="home-title">
+                            Feliz Natal e um<br />
+                            próspero Ano Novo!
+                        </h1>
+                        <p class="home-description">
+                            Que este Natal transborde amor e união, trazendo sorrisos e momentos
+                            inesquecíveis. Que o Ano Novo chegue carregado de esperança, novas
+                            conquistas e alegrias sem fim. Feliz Natal e um maravilhoso Ano Novo
+                            para você e sua família!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- === Wishes Section === -->
+            <section class="wishes section container" id="wishes">
+                <h2 class="section-title">Desejo que neste natal você...</h2>
+                <div class="wishes-container grid">
+                    <div class="wishes-content">
+                        <img
+                            src="./assets/images/wishes/wish-01.png"
+                            alt="Presente"
+                            class="wishes-image"
+                        />
+                        <h3 class="wishes-title">Esteja presente</h3>
+                        <p class="wishes-description">Na vida das pessoas que você ama</p>
+                    </div>
+                    <div class="wishes-content">
+                        <img
+                            src="./assets/images/wishes/wish-02.png"
+                            alt="Presente"
+                            class="wishes-image"
+                        />
+                        <h3 class="wishes-title">Toque a alegria</h3>
+                        <p class="wishes-description">Espalhando felicidade por onde passa</p>
+                    </div>
+                    <div class="wishes-content">
+                        <img
+                            src="./assets/images/wishes/wish-03.png"
+                            alt="Presente"
+                            class="wishes-image"
+                        />
+                        <h3 class="wishes-title">Compartilhe carinho</h3>
+                        <p class="wishes-description">Como quem preenche cada instante com afeto</p>
+                    </div>
+                </div>
+            </section>
+            <!-- === Message Section === -->
+            <section class="message section container" id="message">
+                <div class="message-container grid">
+                    <div class="message-data">
+                        <h2 class="section-title message-title">
+                            O verdadeiro significado <br />do Natal
+                        </h2>
+                        <p class="message-description">
+                            O Natal vai além dos presentes e decorações; é a época em que a
+                            compaixão e a generosidade ganham destaque. É sobre estar junto,
+                            compartilhar amor e lembrar que a luz dentro de nós pode iluminar o
+                            mundo ao redor. É um lembrete de como pequenos gestos podem fazer uma
+                            grande diferença na vida das pessoas.
+                        </p>
+                    </div>
+                    <img
+                        src="./assets/images/message/fireplace.png"
+                        alt="Lareira"
+                        class="message-image"
+                    />
+                </div>
+            </section>
+            <!-- === Actions Section === -->
+            <section class="actions section container" id="actions">
+                <h2 class="section-title">Aproveite o Natal para...</h2>
+                <div class="actions-container">
+                    <div class="swiper actions-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="action-card swiper-slide">
+                                <div class="action-overlay"></div>
+                                <img
+                                    src="./assets/images/decorations/decoration-01.png"
+                                    alt="Biscoito natalino"
+                                    class="action-image"
+                                />
+                                <h3 class="action-title">Criar</h3>
+                                <span class="action-description">Momentos doces em família</span>
+                            </article>
+                            <article class="action-card swiper-slide">
+                                <div class="action-overlay"></div>
+                                <img
+                                    src="./assets/images/decorations/decoration-02.png"
+                                    alt="Árvore de Natal"
+                                    class="action-image"
+                                />
+                                <h3 class="action-title">Reunir a família</h3>
+                                <span class="action-description">Para decorar a casa</span>
+                            </article>
+                            <article class="action-card swiper-slide">
+                                <div class="action-overlay"></div>
+                                <img
+                                    src="./assets/images/decorations/decoration-03.png"
+                                    alt="Rena natalina"
+                                    class="action-image"
+                                />
+                                <h3 class="action-title">Espalhar alegria</h3>
+                                <span class="action-description"
+                                    >Ao presentear os entes queridos</span
+                                >
+                            </article>
+                            <article class="action-card swiper-slide">
+                                <div class="action-overlay"></div>
+                                <img
+                                    src="./assets/images/decorations/decoration-04.png"
+                                    alt="Boneco de neve"
+                                    class="action-image"
+                                />
+                                <h3 class="action-title">Construir</h3>
+                                <span class="action-description"
+                                    >Momentos memoráveis em família</span
+                                >
+                            </article>
+                            <article class="action-card swiper-slide">
+                                <div class="action-overlay"></div>
+                                <img
+                                    src="./assets/images/decorations/decoration-05.png"
+                                    alt="Guirlanda natalina"
+                                    class="action-image"
+                                />
+                                <h3 class="action-title">Compartilhar</h3>
+                                <span class="action-description"
+                                    >O espírito natalino com gestos de afeto</span
+                                >
+                            </article>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- === Footer === -->
+        <footer class="footer">
+            <span class="footer-copy">Desenvolvido por Artur Bomtempo</span>
+        </footer>
 
-    <!-- === Scroll Up === -->
-    <a href="#" class="scroll-up" id="scroll-up">
-        <i class="bx bx-up-arrow-alt scroll-up-icon"></i>
-    </a>
+        <!-- === Scroll Up === -->
+        <a href="#" class="scroll-up" id="scroll-up">
+            <i class="bx bx-up-arrow-alt scroll-up-icon"></i>
+        </a>
 
-    <!-- === ScrollReveal === -->
-    <script src="./assets/js/scrollreveal.min.js"></script>
-    <!-- === Swiper JS === -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <!-- === JS File === -->
-    <script src="./assets/js/script.js"></script>
-</body>
+        <!-- === ScrollReveal === -->
+        <script src="./assets/js/scrollreveal.min.js"></script>
+        <!-- === Swiper JS === -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <!-- === JS File === -->
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

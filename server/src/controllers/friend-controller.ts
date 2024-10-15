@@ -8,15 +8,14 @@ export const findAllFriendsController = async (req: Request, res: Response) => {
         const friends = await friendService.findAllFriendsService();
 
         res.status(200).json({
-            Friends: friends
+            Friends: friends,
         });
-    }
-    catch (error) {
+    } catch (error) {
         res.status(404).json({
-            message: (error as Error).message
+            message: (error as Error).message,
         });
     }
-}
+};
 
 export const findFriendByCodeController = async (req: Request, res: Response) => {
     try {
@@ -30,19 +29,18 @@ export const findFriendByCodeController = async (req: Request, res: Response) =>
 
         if (!foundFriend) {
             res.status(404).json({
-                message: 'Amigo não encontrado!'
+                message: 'Amigo não encontrado!',
             });
 
             return;
         }
 
         res.status(200).json({
-            Friend: foundFriend
+            Friend: foundFriend,
         });
-    } 
-    catch (error) {
+    } catch (error) {
         res.status(500).json({
-            message: (error as Error).message
+            message: (error as Error).message,
         });
     }
 };
@@ -57,15 +55,14 @@ export const createFriendController = async (req: Request, res: Response) => {
 
         res.status(201).json({
             message: 'Amigo salvo com sucesso!',
-            Friend: createdFriend
+            Friend: createdFriend,
         });
-    }
-    catch (error) {
+    } catch (error) {
         res.status(500).json({
-            message: (error as Error).message
+            message: (error as Error).message,
         });
     }
-}
+};
 
 export const updateFriendController = async (req: Request, res: Response) => {
     try {
@@ -82,15 +79,14 @@ export const updateFriendController = async (req: Request, res: Response) => {
 
         res.status(200).json({
             message: 'Dados atualizados com sucesso!',
-            Friend: updatedFriend
+            Friend: updatedFriend,
         });
-    }
-    catch (error) {
+    } catch (error) {
         res.status(404).json({
-            message: (error as Error).message
+            message: (error as Error).message,
         });
     }
-}
+};
 
 export const deleteFriendController = async (req: Request, res: Response) => {
     try {
@@ -103,12 +99,11 @@ export const deleteFriendController = async (req: Request, res: Response) => {
         await friendService.deleteFriendService(id);
 
         res.status(200).json({
-            message: 'Exclusão realizada com sucesso!'
+            message: 'Exclusão realizada com sucesso!',
         });
-    }
-    catch (error) {
+    } catch (error) {
         res.status(404).json({
-            message: (error as Error).message
+            message: (error as Error).message,
         });
     }
-}
+};

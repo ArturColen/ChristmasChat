@@ -1,5 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
 exports.configureCORS = void 0;
 const configureCORS = (app) => {
     app.use((req, res, next) => {
